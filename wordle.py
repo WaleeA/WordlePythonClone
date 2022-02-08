@@ -10,6 +10,15 @@ def menu():
     print("Welcome to wordle")
     menuinput = int(input("Enter 1 to start or 2 to Exit")) #Menu point
     while menuinput != 2:
+        if menuinput == 3:
+            print("TROUBLESHOOT SCREEN")
+            print("Ready to print dictionary")
+            print(list_dict) #Print dictionary in one array
+            x = random.choice(list_dict) # Test random point in array
+            print(x)
+            y = list(x)
+            print (y)
+            menu()
         if menuinput == 1:
             maindef() #start main game after pressing 1
         elif menuinput != 1 or 3:
