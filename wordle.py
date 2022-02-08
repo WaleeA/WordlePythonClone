@@ -20,10 +20,7 @@ def menu():
 def maindef():
     print("Begin game")
     rand_dict = random.choice(list_dict)
-    #print(rand_dict)
     y = list(rand_dict)
-    empty_array = []
-    #print (y)
     counter = 1
     while counter != 6:
         attempt = str(input("Enter your guess")).upper()
